@@ -7,7 +7,7 @@ sudo pacman -Sy --needed --noconfirm - < $root/packages.txt
 mkdir -p ~/.config/nvim
 
 cat $root/configs.txt | while read -r dst src; do
-	ln -sfTv $root/$dst ~/$src
+	ln -sfTv $root/config/$dst $src
 done
 
 cat << EOF | sudo systemctl edit --stdin getty@tty1.service

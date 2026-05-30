@@ -9,7 +9,6 @@ gcc
 git
 gnu-free-fonts
 hyprland
-hyprpaper
 hyprshot
 less
 make
